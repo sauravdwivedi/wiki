@@ -74,11 +74,11 @@ and add
 
 > cd test
 
-###### Initialise connection between project dir and git repository (redundant in gitlab)
+###### Initialise connection between project dir and git repository (redundant)
 
 > git init
 
-###### Add remote that tells Git where to push or pull from (redundant in gitlab)
+###### Add remote that tells Git where to push or pull from (redundant)
 
 > git remote add origin git@github.com:sauravdwivedi/test.git
 
@@ -128,12 +128,17 @@ and add
 
 > git push <_remote> <name_of_branch>
 
-
 ###### Merge a branch with default branch
 
 > git checkout <default_branch>
 
 > git merge <feature_branch>
+  
+###### Delete local repo after repo update
+  
+> cd ..
+
+> sudo rm -r <repo_name>
 
 </p>
 </details>
