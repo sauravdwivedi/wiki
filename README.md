@@ -148,7 +148,7 @@ and add
 
 - [ ] https://edu.anarcho-copy.org/Programming%20Languages/Python/Python%20CheatSheet/beginners_python_cheat_sheet_pcc_django.pdf
 
--[ ] https://youtu.be/rHux0gMZ3Eg
+- [ ] https://youtu.be/rHux0gMZ3Eg
 
 ###### Architecture
 
