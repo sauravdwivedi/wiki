@@ -143,4 +143,76 @@ and add
 </p>
 </details>
 
+<details><summary>Django</summary>
+<p>
 
+- [ ] https://edu.anarcho-copy.org/Programming%20Languages/Python/Python%20CheatSheet/beginners_python_cheat_sheet_pcc_django.pdf
+
+-[ ] https://youtu.be/rHux0gMZ3Eg
+
+###### Architecture
+
+- [ ] In django, Model is models.py, Controller is views.py and View is called Templates in analogy to MVC architecture.
+
+###### Create virtual env
+
+> python -m venv <env_name>
+
+> source <env_name>/bin/activate
+
+###### Create project
+
+> django-admin startproject <project_name> .
+
+###### Create database
+
+> python manage.py migrate
+
+###### View project
+
+> python manage.py runserver <port>
+
+> http://127.0.0.1:8000/admin/
+
+###### Create new app
+
+> python manage.py startapp <app_name>
+
+###### Update app
+
+> cd <app_name>
+
+> open -a Xcode models.py
+
+###### Add app to project
+
+> cd ..
+
+> cd <project_name>
+
+> open -a Xcode settings.py
+
+> add '<app_name>'
+
+###### Migrate updates to database
+
+> cd ..
+
+> python manage.py makemigrations <app_name>
+
+> python manage.py migrate
+
+###### Create a superuser
+
+> python manage.py createsuperuser
+
+###### Register a model with the admin site
+
+> cd <app_name>
+
+> open -a Xcode admin.py
+
+> add 'from .models import <model_name>' and 'admin.site.register(<model_name>)'
+
+</p>
+</details>
