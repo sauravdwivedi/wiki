@@ -75,6 +75,8 @@ and add
 ##### @ CLI
   
 > gh repo clone sauravdwivedi/<repo_name>
+  
+#### Go to repository directory
 
 > cd <repo_name>
 
