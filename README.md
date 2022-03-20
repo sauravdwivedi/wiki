@@ -2,7 +2,7 @@
 
 ## Mac
 
-<details><summary><h2>Terminal</h2></summary>
+<h2><details><summary>Terminal</summary></h2>
 <p>
 
 #### Create zshrc
