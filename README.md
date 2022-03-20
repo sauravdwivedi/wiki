@@ -146,6 +146,10 @@ and add
 
 > git merge <feature_branch>
   
+#### Delete feature branch
+
+> git branch -d <feature_branch>
+  
 #### Delete local repo after repo update
   
 > cd ..
