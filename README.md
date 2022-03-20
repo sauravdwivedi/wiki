@@ -66,13 +66,17 @@ and add
 
 @ SSH
 
-> git clone git@gitlab.tracklib.com:saurav/test.git
+> git clone git@gitlab.<company_name>.com:saurav/<repo_name>.git
 
 @ HTTPS
 
-> git clone https://github.com/sauravdwivedi/test.git
+> git clone https://github.com/sauravdwivedi/<repo_name>.git
+  
+@ CLI
+  
+> gh repo clone sauravdwivedi/<repo_name>
 
-> cd test
+> cd <repo_name>
 
 ###### Initialise connection between project dir and git repository (redundant)
 
@@ -81,6 +85,8 @@ and add
 ###### Add remote that tells Git where to push or pull from (redundant)
 
 > git remote add origin git@github.com:sauravdwivedi/test.git
+  
+###### Check origin
 
 > git remote -v
 
@@ -97,6 +103,10 @@ and add
 ###### Switch to a branch
 
 > git checkout <name_of_branch>
+  
+###### Check current branch
+  
+> git branch
 
 ###### Work on project, make changes (e.g. load <project_dir> in PyCharm)
 
