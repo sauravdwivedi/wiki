@@ -5,7 +5,7 @@
 <details><summary>Terminal</summary>
 <p>
 
-###### Create zshrc
+##### Create zshrc
 
 > touch ~/.zshrc
 
