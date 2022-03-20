@@ -150,6 +150,8 @@ and add
 
 - [ ] https://youtu.be/rHux0gMZ3Eg
 
+- [ ] https://youtu.be/c708Nf0cHrs
+
 ###### Architecture
 
 - [ ] In django, Model is models.py, Controller is views.py and View is called Templates in analogy to MVC architecture.
