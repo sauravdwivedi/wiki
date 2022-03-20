@@ -92,7 +92,7 @@ and add
 
 ###### Download the latest changes in the project from origin repo (<_remote> = origin)
 
-> git pull <_remote> <name_of_branch>
+> git pull <_remote> <name_of_branch> # here branch refers to origin branch, from where to pull!
 
 > git pull
 
