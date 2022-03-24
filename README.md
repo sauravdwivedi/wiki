@@ -28,6 +28,10 @@
 
 > ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+#### Install tree
+
+> brew install tree
+
 </p>
 </details>
 
@@ -111,6 +115,10 @@ and add
 > git branch
 
 #### Work on project, make changes (e.g. load <project_dir> in PyCharm)
+
+#### If you want to UNDO all changes in project, use
+
+> git restore .
 
 #### View differences
 
