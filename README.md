@@ -16,6 +16,13 @@
 #### To customise terminal, add in zshrc
 
 > export PS1='sd@tracklib $ '
+  
+> parse_git_branch() {
+git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* (.*)/ (\1)/'
+}
+
+> setopt PROMPT_SUBST
+PROMPT='% sd@tracklib%{%F{green}%}$(parse_git_branch)%{%F{none}%} $ '
 
 
 </p>
