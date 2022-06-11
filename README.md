@@ -95,7 +95,7 @@ and add
 
 > git init
 
-#### Add remote that tells Git where to push or pull from (redundant)
+#### Add remote that tells Git where to push or pull from
 
 > git remote add origin git@github.com:sauravdwivedi/test.git
   
