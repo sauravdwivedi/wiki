@@ -149,7 +149,7 @@ and add
 
 #### Commit the staged files
 
-> git commit -m "e.g. addded test.py in project"
+> git commit -m "Add via CLI"
 
 #### Send changes to Git (<_remote> = origin)
 
