@@ -60,6 +60,12 @@ and add
 
 <details><summary>GitLab/GitHub CLI</summary>
 <p>
+
+- [ ] https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html
+
+> brew install gh
+
+> brew install git
   
 #### Git GUI
   
@@ -70,12 +76,6 @@ and add
 > brew install git-cola
   
 > git-cola
-
-- [ ] https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html
-
-> brew install gh
-
-> brew install git
 
 #### Login (for github not gitlab)
 
