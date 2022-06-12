@@ -60,6 +60,16 @@ and add
 
 <details><summary>GitLab/GitHub CLI</summary>
 <p>
+  
+#### Git GUI
+  
+> brew install git-gui
+  
+> gitk
+  
+> brew install git-cola
+  
+> git-cola
 
 - [ ] https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html
 
