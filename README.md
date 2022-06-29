@@ -131,6 +131,10 @@ and add
   
 > git branch
 
+#### Rename a branch
+  
+> git branch -m <old_branch_name> <new_branch_name>
+
 #### Work on project, make changes (e.g. load <project_dir> in PyCharm)
 
 #### If you want to UNDO all changes in project, use
@@ -149,13 +153,21 @@ and add
 
 > git add <filename_OR_folder_name>
 
-#### stage all files in the current directory and subdirectory
+#### Stage all files in the current directory and subdirectory
 
 > git add .
 
 #### Confirm that the files have been added to staging
 
 > git status
+
+#### Undo added files
+
+> git reset <file_name>
+
+#### Remove files
+
+> git rm <file_name>
 
 #### Commit the staged files
 
