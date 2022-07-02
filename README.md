@@ -303,6 +303,7 @@ and add
 
 #### Register a model with the admin site
 
+>  
 ```
 > cd <app_name>
 
