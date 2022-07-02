@@ -247,6 +247,7 @@ and add
   
 ```python
 $ python -m venv <env_name>
+$ from django import rest
 $ source <env_name>/bin/activate
 ```
   
