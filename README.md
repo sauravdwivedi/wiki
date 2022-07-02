@@ -245,7 +245,7 @@ and add
 
 #### Create and activate virtual environment (e.g. DjangoEnv)
   
-```python
+```bash
 $ python -m venv <env_name>
 $ from django import rest
 $ source <env_name>/bin/activate
