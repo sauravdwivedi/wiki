@@ -304,11 +304,11 @@ and add
 #### Register a model with the admin site
 
 ```
-> $ cd <app_name>
+> cd <app_name>
 
-> $ open -a Xcode admin.py
+> open -a Xcode admin.py
 
-> $ add 'from .models import <model_name>' and 'admin.site.register(<model_name>)'
+> add 'from .models import <model_name>' and 'admin.site.register(<model_name>)'
 ```
 
 </p>
