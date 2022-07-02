@@ -248,6 +248,12 @@ and add
 > python -m venv <env_name>
 
 > source <env_name>/bin/activate
+  
+#### Install django
+  
+> python -m pip install Django
+  
+> pip install djangorestframework
 
 #### Create project
 
