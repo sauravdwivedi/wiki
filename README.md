@@ -208,20 +208,20 @@ and add
 - [ ] https://flask-restx.readthedocs.io/
 
 #### Create and activate virtual environment (e.g. FlaskEnv)
-
-> python -m venv <env_name>
-
-> source <env_name>/bin/activate
+  
+```bash
+$ python -m venv <env_name>
+$ source <env_name>/bin/activate
+```
 
 #### Install Flask
-
-> pip install Flask
-
-> pip install flask-restful
-
-> pip install flask-restplus
-
-> pip install flask-restx
+  
+```bash
+$ pip install Flask
+$ pip install flask-restful
+$ pip install flask-restplus
+$ pip install flask-restx
+```
 
 </p>
 </details>
@@ -252,43 +252,51 @@ $ source <env_name>/bin/activate
   
 #### Install django
   
-> python -m pip install Django
+```bash  
+$ python -m pip install Django
+$ pip install djangorestframework
+```
   
-> pip install djangorestframework
-
 #### Create project
-
-> django-admin startproject <project_name> .
-
+  
+```bash
+$ django-admin startproject <project_name> .
+```
+  
 #### Create database
 
-> python manage.py migrate
-
+```bash  
+$ python manage.py migrate
+```
+  
 #### View project
 
-> python manage.py runserver <port>
-
-> http://127.0.0.1:8000/admin/
+```bash  
+$ python manage.py runserver <port>
+$ http://127.0.0.1:8000/admin/
+```
 
 #### Create new app
 
-> python manage.py startapp <app_name>
+```bash  
+$ python manage.py startapp <app_name>
+```
 
 #### Update app
 
-> cd <app_name>
-
-> open -a Xcode models.py
-
+```bash  
+$ cd <app_name>
+$ open -a Xcode models.py
+```
+  
 #### Add app to project
 
-> cd ..
-
-> cd <project_name>
-
-> open -a Xcode settings.py
-
-> add '<app_name>'
+```bash  
+$ cd ..
+$ cd <project_name>
+$ open -a Xcode settings.py
+$ add '<app_name>'
+```
 
 #### Migrate updates to database
 
@@ -300,7 +308,9 @@ $ python manage.py migrate
 
 #### Create a superuser
 
-> python manage.py createsuperuser
+```bash  
+$ python manage.py createsuperuser
+```
 
 #### Register a model with the admin site
 
