@@ -207,7 +207,7 @@ and add
 
 - [ ] https://flask-restx.readthedocs.io/
 
-#### Create and activate virtual environment
+#### Create and activate virtual environment (e.g. FlaskEnv)
 
 > python -m venv <env_name>
 
@@ -228,6 +228,10 @@ and add
 
 <details><summary>Django</summary>
 <p>
+  
+- [ ] https://docs.djangoproject.com/
+  
+- [ ] https://www.django-rest-framework.org/
 
 - [ ] https://edu.anarcho-copy.org/Programming%20Languages/Python/Python%20CheatSheet/beginners_python_cheat_sheet_pcc_django.pdf
 
@@ -239,7 +243,7 @@ and add
 
 - [ ] In django, Model is models.py, Controller is views.py and View is called Templates in analogy to MVC architecture.
 
-#### Create and activate virtual environment
+#### Create and activate virtual environment (e.g. DjangoEnv)
 
 > python -m venv <env_name>
 
