@@ -244,11 +244,10 @@ and add
 - [ ] In django, Model is models.py, Controller is views.py and View is called Templates in analogy to MVC architecture.
 
 #### Create and activate virtual environment (e.g. DjangoEnv)
-
-> python -m venv <env_name>
-
-> source <env_name>/bin/activate
-  
+```
+$ python -m venv <env_name>
+$ source <env_name>/bin/activate
+```  
 #### Install django
   
 > python -m pip install Django
@@ -302,7 +301,6 @@ $ python manage.py migrate
 > python manage.py createsuperuser
 
 #### Register a model with the admin site
-
 
 ```
 $ cd <app_name>
