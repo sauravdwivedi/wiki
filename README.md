@@ -291,11 +291,11 @@ and add
 
 #### Migrate updates to database
 
-> cd ..
-
-> python manage.py makemigrations <app_name>
-
-> python manage.py migrate
+```
+$ cd ..
+$ python manage.py makemigrations <app_name>
+$ python manage.py migrate
+```
 
 #### Create a superuser
 
@@ -306,9 +306,7 @@ and add
 
 ```
 $ cd <app_name>
-
 $ open -a Xcode admin.py
-
 $ add 'from .models import <model_name>' and 'admin.site.register(<model_name>)'
 ```
 
