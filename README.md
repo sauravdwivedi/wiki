@@ -196,6 +196,36 @@ and add
 </p>
 </details>
 
+<details><summary>Flask</summary>
+<p>
+
+- [ ] https://flask.palletsprojects.com/
+
+- [ ] https://flask-restful.readthedocs.io/
+
+- [ ] https://flask-restplus.readthedocs.io/
+
+- [ ] https://flask-restx.readthedocs.io/
+
+#### Create and activate virtual environment
+
+> python -m venv <env_name>
+
+> source <env_name>/bin/activate
+
+#### Install Flask
+
+> pip install Flask
+
+> pip install flask-restful
+
+> pip install flask-restplus
+
+> pip install flask-restx
+
+</p>
+</details>
+
 <details><summary>Django</summary>
 <p>
 
@@ -209,7 +239,7 @@ and add
 
 - [ ] In django, Model is models.py, Controller is views.py and View is called Templates in analogy to MVC architecture.
 
-#### Create virtual env
+#### Create and activate virtual environment
 
 > python -m venv <env_name>
 
