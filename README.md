@@ -247,7 +247,6 @@ and add
   
 ```bash
 $ python -m venv <env_name>
-$ from django import rest
 $ source <env_name>/bin/activate
 ```
   
@@ -305,7 +304,7 @@ $ python manage.py migrate
 
 #### Register a model with the admin site
 
-```
+```bash
 $ cd <app_name>
 $ open -a Xcode admin.py
 $ add 'from .models import <model_name>' and 'admin.site.register(<model_name>)'
