@@ -207,6 +207,8 @@ and add
 
 - [ ] https://flask-restx.readthedocs.io/
 
+- [ ] https://flask-smorest.readthedocs.io/
+
 #### Create and activate virtual environment (e.g. FlaskEnv)
   
 ```bash
