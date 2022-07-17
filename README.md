@@ -209,6 +209,8 @@ and add
 
 - [ ] https://flask-smorest.readthedocs.io/
 
+- [ ] https://flask-migrate.readthedocs.io/
+
 #### Create and activate virtual environment (e.g. FlaskEnv)
   
 ```bash
@@ -223,6 +225,15 @@ $ pip install Flask
 $ pip install flask-restful
 $ pip install flask-restplus
 $ pip install flask-restx
+```
+
+#### Migrate updates (new models) to database
+
+```
+$ export FLASK_APP=app.py
+$ flask db init
+$ flask db migrate -m "Initial migration."
+$ flask db upgrade
 ```
 
 </p>
