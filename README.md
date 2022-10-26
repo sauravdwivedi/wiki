@@ -1,200 +1,258 @@
 # Tech wiki
 
-## Mac
-
 <details><summary>Terminal</summary>
 <p>
 
-#### Create zshrc
+### Create z-shell profile
 
-> touch ~/.zshrc
+```bash
+$ touch ~/.zshrc
+$ open ~/.zshrc -a Xcode
+$ source ~/.zshrc
+```
 
-> open ~/.zshrc -a Xcode
+### To customise terminal, add in zshrc
 
-> source ~/.zshrc
+```
+export PS1='sd@tracklib $ '  
 
-#### To customise terminal, add in zshrc
-
-> export PS1='sd@tracklib $ '
-  
-> parse_git_branch() {
+parse_git_branch() {
 git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-> setopt PROMPT_SUBST
+setopt PROMPT_SUBST
 PROMPT='% sd@tracklib%{%F{green}%}$(parse_git_branch)%{%F{none}%} $ '
+```
 
 
 </p>
 </details>
+
 
 <details><summary>Homebrew</summary>
 <p>
 
-#### Install homebrew from terminal
+### Install homebrew from terminal
 
-> ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```bash 
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
-#### Install tree
+### Install tree
 
-> brew install tree
-
-</p>
-</details>
-
-<details><summary>Python</summary>
-<p>
-
-#### Set python3 global, open zshrc
-
-> open ~/.zshrc -a Xcode
-
-and add
-
-> alias pip=/opt/homebrew/bin/pip3
-
-> alias python=/opt/homebrew/bin/python3
+```bash 
+$ brew install tree
+```
 
 </p>
 </details>
+
 
 <details><summary>GitLab/GitHub CLI</summary>
 <p>
 
 - [ ] https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html
 
-> brew install gh
-
-> brew install git
+```bash 
+$ brew install gh
+$ brew install git
+```
   
-#### Git GUI
+### Login (for github not gitlab)
+
+```bash 
+$ gh auth login
+```
   
-> brew install git-gui
+### Create project
+
+```bash 
+$ cd <project_dir>
+```
   
-> gitk
+#### @ SSH
+
+```bash 
+$ git clone git@gitlab.<company_name>.com:saurav/<repo_name>.git
+```
+
+#### @ HTTPS
   
-> brew install git-cola
+```bash 
+$ git clone https://github.com/sauravdwivedi/<repo_name>.git
+```
+    
+#### @ CLI
+
+```bash   
+$ gh repo clone sauravdwivedi/<repo_name>
+```
+    
+### Go to repository directory
   
-> git-cola
-
-#### Login (for github not gitlab)
-
-> gh auth login
-
-#### Create project
-
-> cd <project_dir>
-
-##### @ SSH
-
-> git clone git@gitlab.<company_name>.com:saurav/<repo_name>.git
-
-##### @ HTTPS
-
-> git clone https://github.com/sauravdwivedi/<repo_name>.git
+```bash 
+$ cd <repo_name>
+```
   
-##### @ CLI
+### Initialise connection between project dir and git repository (redundant)
+
+```bash 
+$ git init
+```
   
-> gh repo clone sauravdwivedi/<repo_name>
+### Add remote that tells Git where to push or pull from
+
+```bash 
+$ git remote add origin git@github.com:sauravdwivedi/test.git
+```
+    
+### Check origin
+
+```bash 
+$ git remote -v
+```
   
-#### Go to repository directory
+### Download the latest changes in the project from origin repo (<_remote> = origin)
 
-> cd <repo_name>
-
-#### Initialise connection between project dir and git repository (redundant)
-
-> git init
-
-#### Add remote that tells Git where to push or pull from
-
-> git remote add origin git@github.com:sauravdwivedi/test.git
+```bash 
+$ git pull <_remote> <name_of_branch> # here branch refers to origin branch, from where to pull!
+$ git pull
+```
   
-#### Check origin
+### Create a branch
 
-> git remote -v
-
-#### Download the latest changes in the project from origin repo (<_remote> = origin)
-
-> git pull <_remote> <name_of_branch> # here branch refers to origin branch, from where to pull!
-
-> git pull
-
-#### Create a branch
-
-> git checkout -b <name_of_branch>
-
-#### Switch to a branch
-
-> git checkout <name_of_branch>
+```bash 
+$ git checkout -b <name_of_branch>
+```
   
-#### Check current branch
+### Switch to a branch
+
+```bash 
+$ git checkout <name_of_branch>
+```
   
-> git branch
+### Check current branch
 
-#### Rename a branch
+```bash   
+$ git branch
+```
   
-> git branch -m <old_branch_name> <new_branch_name>
+### Rename a branch
 
-#### Work on project, make changes (e.g. load <project_dir> in PyCharm)
-
-#### If you want to UNDO all changes in project, use
-
-> git restore .
-
-#### View differences
-
-> git diff
-
-#### View the files that have changes
-
-> git status
-
-#### Add local changes to staging
-
-> git add <filename_OR_folder_name>
-
-#### Stage all files in the current directory and subdirectory
-
-> git add .
-
-#### Confirm that the files have been added to staging
-
-> git status
-
-#### Undo added files
-
-> git reset <file_name>
-
-#### Remove files
-
-> git rm <file_name>
-
-#### Commit the staged files
-
-> git commit -m "Add via CLI"
-
-#### Send changes to Git (<_remote> = origin)
-
-> git push <_remote> <name_of_branch>
-
-#### Merge a branch with default branch
-
-> git checkout <default_branch>
-
-> git merge <feature_branch>
+```bash   
+$ git branch -m <old_branch_name> <new_branch_name>
+```
   
-#### Delete feature branch
+### Work on project, make changes (e.g. load <project_dir> in PyCharm)
 
-> git branch -d <feature_branch>
-  
-#### Delete local repo after repo update
-  
-> cd ..
+### If you want to UNDO all changes in project, use
 
-> sudo rm -r <repo_name>
+```bash 
+$ git restore .
+```
+  
+### View differences
+
+```bash 
+$ git diff
+```
+  
+### View the files that have changes
+
+```bash 
+$ git status
+```
+  
+### Add local changes to staging
+
+```bash 
+$ git add <filename_OR_folder_name>
+```
+  
+### Stage all files in the current directory and subdirectory
+
+```bash 
+$ git add .
+```
+  
+### Confirm that the files have been added to staging
+
+```bash 
+$ git status
+```
+  
+### Undo added files
+
+```bash 
+$ git reset <file_name>
+```
+  
+### Remove files
+
+```bash 
+$ git rm <file_name>
+```
+  
+### Commit the staged files
+
+```bash 
+$ git commit -m "Modify feat: Endpoint etc"
+```
+  
+### Send changes to Git (<_remote> = origin)
+
+```bash 
+$ git push <_remote> <name_of_branch>
+```
+  
+### Merge a branch with default branch
+
+```bash 
+$ git checkout <default_branch>
+$ git merge <feature_branch>
+```
+
+### Delete feature branch
+
+```bash 
+$ git branch -d <feature_branch>
+```
+  
+### Delete local repo after repo update
+
+```bash   
+$ cd ..
+$ sudo rm -r <repo_name>
+```
 
 </p>
 </details>
+
+<details><summary>Git Desktop</summary>
+<p>
+
+### Install Github Desktop
+  
+```bash
+$ brew install --cask github
+```
+
+### Squashing commits
+  
+- [ ] https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/managing-commits/squashing-commits
+
+### Other Git GUI
+
+```bash   
+$ brew install git-gui 
+$ gitk
+$ brew install git-cola  
+$ git-cola
+```
+
+</p>
+</details>
+
 
 <details><summary>Flask</summary>
 <p>
@@ -211,14 +269,14 @@ and add
 
 - [ ] https://flask-migrate.readthedocs.io/
 
-#### Create and activate virtual environment (e.g. FlaskEnv)
+### Create and activate virtual environment (e.g. FlaskEnv)
   
 ```bash
 $ python -m venv <env_name>
 $ source <env_name>/bin/activate
 ```
 
-#### Install Flask
+### Install Flask
   
 ```bash
 $ pip install Flask
@@ -227,7 +285,7 @@ $ pip install flask-restplus
 $ pip install flask-restx
 ```
 
-#### Migrate updates (new models) to database
+### Migrate updates (new models) to database
 
 ```
 $ export FLASK_APP=app.py
@@ -238,6 +296,7 @@ $ flask db upgrade
 
 </p>
 </details>
+
 
 <details><summary>Django</summary>
 <p>
@@ -252,57 +311,57 @@ $ flask db upgrade
 
 - [ ] https://youtu.be/c708Nf0cHrs
 
-#### Architecture
+### Architecture
 
 - [ ] In django, Model is models.py, Controller is views.py and View is called Templates in analogy to MVC architecture.
 
-#### Create and activate virtual environment (e.g. DjangoEnv)
+### Create and activate virtual environment (e.g. DjangoEnv)
   
 ```bash
 $ python -m venv <env_name>
 $ source <env_name>/bin/activate
 ```
   
-#### Install django
+### Install django
   
 ```bash  
 $ python -m pip install Django
 $ pip install djangorestframework
 ```
   
-#### Create project
+### Create project
   
 ```bash
 $ django-admin startproject <project_name> .
 ```
   
-#### Create database
+### Create database
 
 ```bash  
 $ python manage.py migrate
 ```
   
-#### View project
+### View project
 
 ```bash  
 $ python manage.py runserver <port>
 $ http://127.0.0.1:8000/admin/
 ```
 
-#### Create new app
+### Create new app
 
 ```bash  
 $ python manage.py startapp <app_name>
 ```
 
-#### Update app
+### Update app
 
 ```bash  
 $ cd <app_name>
 $ open -a Xcode models.py
 ```
   
-#### Add app to project
+### Add app to project
 
 ```bash  
 $ cd ..
@@ -311,7 +370,7 @@ $ open -a Xcode settings.py
 $ add '<app_name>'
 ```
 
-#### Migrate updates to database
+### Migrate updates to database
 
 ```
 $ cd ..
@@ -319,13 +378,13 @@ $ python manage.py makemigrations <app_name>
 $ python manage.py migrate
 ```
 
-#### Create a superuser
+### Create a superuser
 
 ```bash  
 $ python manage.py createsuperuser
 ```
 
-#### Register a model with the admin site
+### Register a model with the admin site
 
 ```bash
 $ cd <app_name>
