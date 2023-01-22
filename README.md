@@ -272,17 +272,17 @@ $ git-cola
 ### Create and activate virtual environment (e.g. FlaskEnv)
   
 ```bash
-$ python -m venv <env_name>
+$ python3 -m venv <env_name>
 $ source <env_name>/bin/activate
 ```
 
 ### Install Flask
   
 ```bash
-$ pip install Flask
-$ pip install flask-restful
-$ pip install flask-restplus
-$ pip install flask-restx
+$ pip3 install Flask
+$ pip3 install flask-restful
+$ pip3 install flask-restplus
+$ pip3 install flask-restx
 ```
 
 ### Migrate updates (new models) to database
@@ -318,15 +318,15 @@ $ flask db upgrade
 ### Create and activate virtual environment (e.g. DjangoEnv)
   
 ```bash
-$ python -m venv <env_name>
+$ python3 -m venv <env_name>
 $ source <env_name>/bin/activate
 ```
   
 ### Install django
   
 ```bash  
-$ python -m pip install Django
-$ pip install djangorestframework
+$ python3 -m pip install Django
+$ pip3 install djangorestframework
 ```
   
 ### Create project
@@ -338,20 +338,20 @@ $ django-admin startproject <project_name> .
 ### Create database
 
 ```bash  
-$ python manage.py migrate
+$ python3 manage.py migrate
 ```
   
 ### View project
 
 ```bash  
-$ python manage.py runserver <port>
+$ python3 manage.py runserver <port>
 $ http://127.0.0.1:8000/admin/
 ```
 
 ### Create new app
 
 ```bash  
-$ python manage.py startapp <app_name>
+$ python3 manage.py startapp <app_name>
 ```
 
 ### Update app
@@ -374,14 +374,14 @@ $ add '<app_name>'
 
 ```
 $ cd ..
-$ python manage.py makemigrations <app_name>
-$ python manage.py migrate
+$ python3 manage.py makemigrations <app_name>
+$ python3 manage.py migrate
 ```
 
 ### Create a superuser
 
 ```bash  
-$ python manage.py createsuperuser
+$ python3 manage.py createsuperuser
 ```
 
 ### Register a model with the admin site
