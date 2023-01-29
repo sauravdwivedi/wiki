@@ -218,7 +218,21 @@ $ git merge <feature_branch>
 $ git branch -d <feature_branch>
 ```
   
-### Delete local repo after repo update
+### Delete last commit/merge commit
+
+```bash   
+$ git reset --hard HEAD^
+$ git push origin -f
+```
+
+### Delete last N commits/merge commits
+
+```bash   
+$ git reset --hard HEAD~N
+$ git push origin -f
+```
+
+### Delete local repository
 
 ```bash   
 $ cd ..
