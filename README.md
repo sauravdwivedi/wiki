@@ -38,6 +38,14 @@ PROMPT='% sd@tracklib%{%F{green}%}$(parse_git_branch)%{%F{none}%} $ '
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
+### Set homebrew path
+
+Add to .zshrc file
+
+```bash
+PATH="/opt/homebrew/bin:$PATH"
+```
+
 ### Install tree
 
 ```bash 
