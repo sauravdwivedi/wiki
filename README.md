@@ -229,15 +229,19 @@ $ git branch -d <feature_branch>
 ### Delete last commit/merge commit
 
 ```bash   
+$ git stash
 $ git reset --hard HEAD^
 $ git push origin -f
+$ git stash pop
 ```
 
 ### Delete last N commits/merge commits
 
 ```bash   
+$ git stash
 $ git reset --hard HEAD~N
 $ git push origin -f
+$ git stash pop
 ```
 
 ### Delete local repository
